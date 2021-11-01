@@ -1,34 +1,56 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-#background-image {
-    width: 100%;
-    opacity: 0.8;
-    position: absolute;
-}
-
-.about-me {
-    position: relative;
-    padding: 40px;
-    background-color: white;
-    border-radius: 10px 10px 0px 0px;
     text-align: center;
-    top: 10%;
-    width: 50%;
-}
-
-.header h2 {
-    font-size: 50px;
-    color: rgb(106, 106, 106);
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 80px;
     color: rgb(106, 106, 106);
+    letter-spacing: 0.1em;
 }
 
-#navn {
-    color: black;
+.about-me {
+    padding: 15px;
+    background-color: rgb(241, 241, 241);
+    font-size: 20px;
+    color: rgb(106, 106, 106);
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.about-me h2 {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    font-weight: 900;
+}
+
+footer {
+    margin-top: 5%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.table-left {
+    font-weight: 900;
+}
+
+table {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+}
+
+td {
+    padding: 10px 20px;
 }
