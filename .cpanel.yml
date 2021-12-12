@@ -3,4 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/magnumsk/public_html
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp port.html $DEPLOYPATH
+    - /bin/cp erfaring.html $DEPLOYPATH
     - /bin/cp -R resources $DEPLOYPATH
