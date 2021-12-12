@@ -3,5 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/magnumsk/public_html
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp resources/style.css $DEPLOYPATH
     - /bin/cp -R resources $DEPLOYPATH
