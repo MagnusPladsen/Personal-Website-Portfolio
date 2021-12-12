@@ -1,28 +1,21 @@
+
+
+/*******************
+       GENERAL
+********************/
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     text-align: center;
-    box-sizing: border-box;
+    line-height: 1.3em;
 }
 
-h1 {
-    font-size: 80px;
-    color: rgb(106, 106, 106);
-    letter-spacing: 0.1em;
-}
 
-.about-me {
-    padding: 15px;
-    background-color: rgb(241, 241, 241);
-    font-size: 20px;
-    color: rgb(106, 106, 106);
-    line-height: 20px;
-    margin-bottom: 40px;
-}
-
-.about-me h2 {
-    margin-bottom: 40px;
-}
 
 a {
     text-decoration: none;
@@ -30,27 +23,241 @@ a {
 }
 
 a:hover {
-    font-weight: 900;
+    opacity: 0.7;
 }
 
-footer {
-    margin-top: 5%;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
+/*******************
+    NAVIGATION
+********************/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(58, 58, 58);
+}
+  
+li {
+    display: inline-block;
+    left: 0;
+    right: 0;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+    opacity: 1;
+}
+
+
+/*****PHABLET*******/
+@media (min-width:555px) {
+    li a {
+        margin: 0px 30px;
+    }
+}
+
+
+/*****TABLET*******/
+@media (min-width:768px) {
+    li a {
+        margin: 0px 55px;
+    }
+}  
+
+
+/*******************
+       HEADER
+********************/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+
+.profile-picture {
+    margin-top: 20px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: rgb(58, 58, 58);
+    margin-bottom: -10px;
+    line-height: 1em;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo {
+    height: 20px;
+    margin: 0px 20px;
+}
+
+.linkedin {
+    border-radius: 5px;
+}
+
+.me p {
+    font-size: 0.9em;
+    font-weight: 900;
+    color: rgb(58, 58, 58);
+}
+
+
+/*****PHABLET*******/
+@media (min-width:555px) {
+    h1 {
+        font-size: 60px;
+        line-height: 1em;
+    }
+    .me p {
+        font-size: 20px;
+    }
+    .profile-picture {
+        margin-left: 40px;
+        height: auto;
+    }
+}    
+
+/*****TABLET*******/
+@media (min-width:768px) {
+    h1 {
+        font-size: 80px;
+        margin-top: 0px;
+    }
+} 
+
+/*****DESKTOP*******/
+@media (min-width:1200px) { 
+    header {
+        margin-bottom: 50px;
+        padding: 50px;
+    }
+    .about-me {
+        margin-right: 100px;
+    }
+    .profile-picture {
+        margin-right: 20px;
+        width: 20%;
+        height: auto;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    .me p {
+        font-size: 30px;
+    }
+
+    .logo {
+        height: 30px;
+        margin: 0 30px 0 30px;
+    }
+}
+
+
+
+/*******************
+       MAIN
+********************/
+
+.info {
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: auto;
+    margin: 50px auto;
+    box-shadow: 0px 0px 5px black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+
+table {
+    table-layout: fixed;
+    line-height: 1.5em;
 }
 
 .table-left {
-    font-weight: 900;
+    font-weight: 600;
 }
 
-table {
-    width: fit-content;
-    margin: 0 auto;
-    text-align: left;
-    padding: 20px;
+.bio {
+    padding-bottom: 20px;
 }
+
 
 td {
-    padding: 10px 20px;
+    text-align: left;
+    padding: 5px 20px 0px 0px;
+}
+
+.first-line::after {
+    content: "\a";
+    white-space: pre;
+}
+
+
+
+/*****PHABLET*******/
+@media (min-width:555px) {
+    .first-line::after {
+        content: "";
+        white-space: normal;
+    }
+}
+
+/*****DESKTOP*******/
+@media (min-width:1200px) {
+    .info {
+        flex-wrap: nowrap;
+        width: 70vw;
+        height: 300px;
+    }
+    .about-me {
+        margin-right: 20px;
+    }
+    
+}
+
+/*******************
+       FOOTER
+********************/
+
+footer {
+    margin-top: 5%;
+    position: static;
+    text-align: center;
+    bottom: 0px;
+    width: 100vw;
+    font-size: 0.7em;
+}
+
+
+/*****DESKTOP*******/
+@media (min-width:1200px) {
+    footer {
+        font-size: 1em;
+    }
 }
