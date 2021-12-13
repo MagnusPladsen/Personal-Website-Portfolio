@@ -22,7 +22,7 @@ a {
     color: inherit;
 }
 
-a:hover {
+a:hover, a:active {
     opacity: 0.7;
 }
 
@@ -73,6 +73,12 @@ li a:hover {
     }
 }  
 
+/*****DESKTOP*******/
+@media (min-width:1200px) { 
+    li a {
+        margin: 0px 100px;
+    }
+}
 
 /*******************
        HEADER
@@ -155,6 +161,7 @@ h1 {
     }
     .about-me {
         margin-right: 100px;
+        padding: 0px 50px;
     }
     .profile-picture {
         margin-right: 20px;
@@ -218,8 +225,10 @@ td {
     white-space: pre;
 }
 
-
-
+.about-me .first-line::after {
+    content: "";
+    white-space: normal;
+}
 /*****PHABLET*******/
 @media (min-width:555px) {
     .first-line::after {
@@ -237,8 +246,11 @@ td {
     }
     .about-me {
         margin-right: 20px;
+        line-height: 1.5em;
     }
-    
+    .info {
+        width: 60vw;
+    }
 }
 
 /*******************
