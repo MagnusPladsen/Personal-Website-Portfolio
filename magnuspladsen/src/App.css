@@ -1,0 +1,96 @@
+body, html {
+  height: 100%;
+}
+
+* {
+  font-family: sofia-pro, sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 80px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 43px;
+  margin-bottom: 50px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  text-shadow: 5px 3px 6px #00000029;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.pb {
+  background-image: url(./Images/pb.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 315px;
+  width: 315px;
+  border-radius: 480px;
+  box-shadow: 5px 3px 6px #00000029;
+  position: absolute;
+  top: 30px;
+  left: -350px;
+}
+
+button {
+  font-size: 25px;
+  font-weight: 700;
+  box-shadow: 5px 3px 6px #00000029;
+  border-radius: 60px;
+  padding: 5px 120px;
+  border: 0px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.icons {
+  position: absolute;
+  display: inline-flex;
+  left: 50%;
+  transform: translate(-50%);
+  top: 190px;
+}
+
+.icon {
+  height: 33px;
+  width: 33px;
+  box-shadow: 5px 3px 6px #00000029;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.facebook {
+  background-image: url(./Images/facebook.png);
+  margin-right: 40px;
+}
+
+.linkedin {
+  background-image: url(./Images/linkedin.jpg);
+  margin-right: 40px;
+}
+
+.github {
+  background-image: url(./Images/github.png);
+}

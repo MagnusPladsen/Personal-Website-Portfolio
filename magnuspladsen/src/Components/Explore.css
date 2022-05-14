@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    font-family: sofia-pro, sans-serif;
+  }
+  
+  h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 43px;
+    margin-bottom: 50px;
+  }
+  
