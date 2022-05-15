@@ -63,6 +63,9 @@ button {
   transform: translate(-50%);
 }
 
+button:hover {
+  cursor: pointer;
+}
 .icons {
   position: absolute;
   display: inline-flex;

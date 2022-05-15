@@ -1,36 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './App';
 import Explore from './Components/Explore';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-//let renderPage = <App />;
 
-class Home extends React.Component {
+export class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      'page': <App />
-    }
+    this.handleCick = this.handleCick.bind(this);
+    this.state = { page: <App onClick={this.handleClick}/> }
   }
-    selectPage => {
-      this.setState.page = <Explore />
-    }
-    render () {
-      return {this.state.page};
-    }
+  handleCick() {
+    this.setState({ page: <Explore /> })
+  }
+  render () {
+    return this.state.page
+  }
 }
 
 
-ReactDOM.render(<Home />, document.getElementById('root'));
 
-/* const root = ReactDOM.createRoot(document.getElementById('root'));
+
+ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <this.Root.state />
+    <Home />
   </React.StrictMode>
-); */
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
