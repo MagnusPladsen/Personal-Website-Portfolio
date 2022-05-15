@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 import Explore from './Components/Explore';
+
+
 
 
 
@@ -17,11 +20,12 @@ class App extends React.Component {
             <a href="https://www.linkedin.com/in/magnus-pladsen-1a2738226" target="_blank"><div className="icon linkedin"></div></a>
             <a href="https://github.com/MagnusPladsen" target="_blank"><div className="icon github"></div></a>
           </div>
-          <button>Explore</button>
+            <button>Explore</button>
         </header>
       </div>
     );
   }
 }
+
 
 export default App;
