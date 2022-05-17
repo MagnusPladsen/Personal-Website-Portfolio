@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    position: relative;
+    position: absolute;
     margin-top: 50px;
     left: 50%;
     transform: translate(-50%);
@@ -37,7 +37,7 @@
     width: 315px;
     border-radius: 50%;
     box-shadow: 5px 3px 6px #00000029;
-    left: 15%;
+    left: -60%;
     top: 0.5em;
 }
   

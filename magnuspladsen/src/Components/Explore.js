@@ -16,9 +16,9 @@ function Explore() {
           <a href="https://github.com/MagnusPladsen" target="_blank"><div className="Explore-github icon github"><p>GitHub</p></div></a>
           </div>
       </header>
-      <div class="Explore-btns">
-        <button class="Explore-btn btn-skills">SKILLS</button>
-        <button class="Explore-btn btn-interests">INTERESTS</button>
+      <div className="Explore-btns">
+        <button className="Explore-btn btn-skills">SKILLS</button>
+        <button className="Explore-btn btn-interests">INTERESTS</button>
       </div>
     </div>
   );
