@@ -1,50 +1,118 @@
-body, html {
-  height: 100%;
+.App-header h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.2em; 
+    margin-bottom: -10px;
 }
-
-* {
-  font-family: sofia-pro, sans-serif;
+  
+.App-header h2 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3em;
 }
-
 
 .App {
-  text-align: center;
+    text-align: center;
 }
-
+  
 .App-header {
-  text-shadow: 5px 3px 6px #00000029;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  position: fixed;
-  margin-top: 50px;
-  left: 50%;
-  transform: translate(-50%);
+    text-shadow: 5px 3px 6px #00000029;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    position: relative;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+  
+.App-pb {
+    background-image: url(./Images/pb.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 315px;
+    width: 315px;
+    border-radius: 50%;
+    box-shadow: 5px 3px 6px #00000029;
+    left: 15%;
+    top: 0.5em;
+}
+  
+.App-icons {
+    margin-top: 20px;
+    display: inline-flex;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    top: 12em;
 }
 
-.pb {
-  background-image: url(./Images/pb.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 315px;
-  width: 315px;
-  border-radius: 50%;
-  box-shadow: 5px 3px 6px #00000029;
-  left: -350px;
-  margin-top: -25px;
+.App-facebook {
+    margin-right: 40px;
+}
+  
+.App-linkedin {
+    margin-right: 40px;
 }
 
-button {
-  font-size: 25px;
-  font-weight: 700;
-  box-shadow: 5px 3px 6px #00000029;
-  border-radius: 60px;
-  padding: 5px 120px;
-  border: 0px;
-  left: 50%;
-  transform: translate(-50%);
-  margin-top: 25px;
+
+.btn-explore {
+    font-size: 25px;
+    font-weight: 700;
+    box-shadow: 5px 3px 6px #00000029;
+    border-radius: 60px;
+    padding: 5px 120px;
+    border: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    top: 12em;
 }
 
+.btn-explore a {
+    color: black;
+}
+
+
+
+
+
+/* ---------- @MEDIA ---------- */
+/* MOBILE */
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0;
+      margin-top: -2em;
+    }
+    h2 {
+      font-size: 1.7em;
+      margin-bottom: 0px;
+      margin-top: -0.5em;
+    }
+    .pb {
+      height: 1px;
+      width: 1px;
+    }
+    .App-header {
+        top: 70px;
+        width: 100%;
+    }
+    .icons {
+        display: inline-flex;
+        margin-top: -3em;
+    }
+    .facebook {
+        margin-right: 60px;
+    }
+    .linkedin {
+        margin-right: 60px;
+    }
+    button {
+        font-size: 1.5em;
+        top: 500px;
+    }
+}
