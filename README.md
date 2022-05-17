@@ -9,3 +9,6 @@ What is up next:
 - Fix Scaling bug
 - Erfaring Page
 - Portefølje page
+
+
+![MagnusPladsen-1](https://user-images.githubusercontent.com/93226629/168797551-d4aa44a8-8019-452b-966f-aa2af036291e.png)
