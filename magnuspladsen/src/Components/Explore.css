@@ -57,7 +57,6 @@
   font-size: 0.8em;
 }
 
-
 .Explore-linkedin {
   margin-right: 6em;
 }
@@ -88,3 +87,52 @@
   margin-right: 0;
 }
 
+/* ---------- @MEDIA ---------- */
+/* MOBILE */
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .Explore-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    margin-top: -1.7em;
+  }
+  .Explore-pb {
+    height: 0px;
+    width: 0px;
+  }
+  .Explore-header {
+    top: 70px;
+    width: 100%;
+  }
+  .Explore-icons {
+    display: inline-flex;
+    margin-top: 1em;
+  }
+  .Explore-facebook {
+    margin-right: 5em;
+  }
+  .Explore-linkedin {
+    margin-right: 5em;
+  }
+  .Explore-github {
+    margin-right: 3em;
+  }
+  .Explore-icons p {
+    margin-left: 3em;
+  }
+  .Explore-btns {
+    font-size: 1em;
+    top: 7em;
+  }
+  .Explore-btn {
+    font-size: 1em;
+    font-weight: 700;
+    box-shadow: 5px 3px 6px #00000029;
+    border-radius: 60px;
+    padding: 5px 50px;
+    border: 0px;
+    margin-top: 1em;
+  }
+  .btn-skills {
+    margin-right: 1em;
+  }
+}
