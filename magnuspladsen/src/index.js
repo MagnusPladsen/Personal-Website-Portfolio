@@ -6,27 +6,12 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 
-export class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleCick = this.handleCick.bind(this);
-    this.state = { page: <App onClick={this.handleClick}/> }
-  }
-  handleCick() {
-    this.setState({ page: <Explore /> })
-  }
-  render () {
-    return this.state.page
-  }
-}
-
-
 
 
  const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <App />
   </React.StrictMode>
 );
 

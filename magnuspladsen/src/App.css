@@ -6,19 +6,6 @@ body, html {
   font-family: sofia-pro, sans-serif;
 }
 
-h1 {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 80px;
-  margin-bottom: 0;
-}
-
-h2 {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 43px;
-  margin-bottom: 50px;
-}
 
 .App {
   text-align: center;
@@ -30,8 +17,8 @@ h2 {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  position: absolute;
-  top: 130px;
+  position: fixed;
+  margin-top: 50px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -43,11 +30,10 @@ h2 {
   background-size: cover;
   height: 315px;
   width: 315px;
-  border-radius: 480px;
+  border-radius: 50%;
   box-shadow: 5px 3px 6px #00000029;
-  position: absolute;
-  top: 30px;
   left: -350px;
+  margin-top: -25px;
 }
 
 button {
@@ -57,40 +43,8 @@ button {
   border-radius: 60px;
   padding: 5px 120px;
   border: 0px;
-  position: absolute;
-  top: 250px;
   left: 50%;
   transform: translate(-50%);
+  margin-top: 25px;
 }
 
-.icons {
-  position: absolute;
-  display: inline-flex;
-  left: 50%;
-  transform: translate(-50%);
-  top: 190px;
-}
-
-.icon {
-  height: 33px;
-  width: 33px;
-  box-shadow: 5px 3px 6px #00000029;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-}
-
-.facebook {
-  background-image: url(./Images/facebook.png);
-  margin-right: 40px;
-}
-
-.linkedin {
-  background-image: url(./Images/linkedin.jpg);
-  margin-right: 40px;
-}
-
-.github {
-  background-image: url(./Images/github.png);
-}
