@@ -81,12 +81,29 @@
 }
 
 .btn-skills {
-  margin-right: 80px;
+  margin-right: 1em;
 }
 
 .btn-interests {
   margin-right: 0;
 }
+
+.show-skills {
+  display: block;
+}
+
+.hide-skills {
+  display: none;
+}
+
+.show-interests {
+  display: block;
+}
+
+.hide-interests {
+  display: none;
+}
+
 
 /* ---------- @MEDIA ---------- */
 /* MOBILE */

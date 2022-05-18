@@ -17,7 +17,7 @@ class Navbar extends React.Component {
         }
     }
     render() {
-        let dropDown = this.state.isDropDown ? "show-dropdown" : "hide-dropdown"
+        let dropDown = this.state.isDropDown ? "show-dropdown" : "hide-dropdown";
         return (
             <div>
                 <nav className="desktop-nav">
