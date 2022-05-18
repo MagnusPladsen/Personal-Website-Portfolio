@@ -1,0 +1,113 @@
+.UnderDev-header h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.2em; 
+    margin-bottom: -10px;
+}
+
+.UnderDev {
+    text-align: center;
+}
+  
+.UnderDev-header {
+    text-shadow: 5px 3px 6px #00000029;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    position: absolute;
+    margin-top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.UnderDev-img {
+    background-image: url(../Images/under_dev.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 700px;
+    margin-top: 1em;
+}
+
+.UnderDev-img-p {
+    position: absolute;
+    color: white;
+    font-size: 0.5em;
+    top: 50em;
+    right: 15em;
+}
+
+.UnderDev-icons {
+    margin-top: 20px;
+    display: inline-flex;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    top: 16em;
+}
+
+.UnderDev-facebook {
+    margin-right: 60px;
+}
+  
+.UnderDev-linkedin {
+    margin-right: 60px;
+}
+
+.UnderDev-btn {
+    font-size: 25px;
+    font-weight: 700;
+    box-shadow: 5px 3px 6px #00000029;
+    border-radius: 60px;
+    padding: 5px 120px;
+    border: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    top: 10em;
+}
+
+.UnderDev-btn a {
+    color: black;
+}
+
+/* ---------- @MEDIA ---------- */
+/* MOBILE */
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    .UnderDev-header h1 {
+        position: absolute;
+        font-size: 2em;
+        right: 1.5em;
+        top: -1.5em;
+    }
+    .UnderDev-header-p {
+        position: absolute;
+        font-size: 1.5em;
+        right: 0em;
+        top: 0em;
+      }
+    .UnderDev-header {
+        top: 70px;
+        width: 100%;
+    }
+    .UnderDev-btn {
+        color: black;
+        margin-top: 14em;
+    }
+    .UnderDev-img {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        right: 0em;
+        top: 3em;
+    }
+    .UnderDev-img-p {
+        font-size: 0.5em;
+        right: 8em;
+        margin-top: 46em;
+
+    }
+}
+

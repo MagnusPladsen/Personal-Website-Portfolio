@@ -19,6 +19,7 @@
   top: 0px;
   left: 50%;
   transform: translate(-50%);
+  margin-top: 2em;
 }
 
 .Explore-pb {
@@ -67,7 +68,7 @@
   display: inline-flex;
   left: 50%;
   transform: translate(-50%);
-  top: 10em;
+  top: 13em;
 }
 
 .Explore-btn {
@@ -100,6 +101,7 @@
     width: 0px;
   }
   .Explore-header {
+    margin-top: 4em;
     top: 70px;
     width: 100%;
   }
@@ -130,7 +132,8 @@
     border-radius: 60px;
     padding: 5px 50px;
     border: 0px;
-    margin-top: 1em;
+    margin-top: 6em;
+    color: black;
   }
   .btn-skills {
     margin-right: 1em;

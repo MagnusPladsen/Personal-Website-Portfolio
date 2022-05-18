@@ -31,6 +31,16 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      function showDropDown() {
+          var x = document.getElementByClassName("mobile-dropdown");
+          if (x.style.display === "block") {
+              x.style.display = 'none';
+          } else {
+          x.style.display = 'block';
+          }
+      }
+  </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
