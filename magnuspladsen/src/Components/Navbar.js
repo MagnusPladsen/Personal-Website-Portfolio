@@ -30,7 +30,15 @@ class Navbar extends React.Component {
                             <a href="https://www.linkedin.com/in/magnus-pladsen-1a2738226" target="_blank"><div className="desktop-linkedin icon linkedin"></div></a>
                             <a href="https://github.com/MagnusPladsen" target="_blank"><div className="desktop-github icon github"></div></a>
                         </div>
-                        <img src={menuIcon} alt="Hamburger menu" className="desktop-menu-icon {dropDown}" />
+                        <a href="javascript:void(0);" className="menu-icon" onClick={this.toggleDropDown}><img src={menuIcon} alt="Hamburger menu" className="desktop-menu-icon" /></a>
+                        <div className={dropDown} id="drop-down">
+                            <Link to="/"><li>Home</li></Link>
+                            <Link to="/explore"><li>Explore</li></Link>
+                            <Link to="/under_development"><li>Portfolio</li></Link>
+                            <Link to="/under_development"><li>About</li></Link>
+                            <Link to="/under_development"><li>Contact</li></Link>
+                            <Link to="/under_development"><li>CV</li></Link>
+                        </div>
                     </header>
                 </nav>
                 <nav className="mobile-nav">
@@ -40,7 +48,7 @@ class Navbar extends React.Component {
                         <a href="javascript:void(0);" className="menu-icon" onClick={this.toggleDropDown}></a>
                         <div className={dropDown} id="drop-down">
                             <Link to="/"><li>Home</li></Link>
-                            <Link to="/explore"><li>desktop</li></Link>
+                            <Link to="/explore"><li>Explore</li></Link>
                             <Link to="/under_development"><li>Portfolio</li></Link>
                             <Link to="/under_development"><li>About</li></Link>
                             <Link to="/under_development"><li>Contact</li></Link>

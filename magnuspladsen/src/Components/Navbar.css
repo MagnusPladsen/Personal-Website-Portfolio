@@ -1,91 +1,103 @@
 .desktop-nav {
-    text-align: center;
-    position: relative;
-  }
+  text-align: center;
+  position: relative;
+}
+  
+.desktop-header {
+  text-shadow: 5px 3px 6px #00000029;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  position: relative;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
+  
+.desktop-header h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2em;
+  margin-top: 0em;
+}
   
   
   
   
-  .desktop-header {
-    text-shadow: 5px 3px 6px #00000029;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    position: relative;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%);
-  }
+.desktop-pb {
+  background-image: url(../Images/pb.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  border-radius: 480px;
+  box-shadow: 5px 3px 6px #00000029;
+  left: 1em;
+  top: 0.5em;
+}
   
-  .desktop-header h1 {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2em;
-    margin-top: 0em;
-  }
+.desktop-icons {
+  position: absolute;
+  display: inline-flex;
+  top: 1em;
+  left: 5em;
+}
   
+.desktop-icon {
+  height: 33px;
+  width: 33px;
+  box-shadow: 5px 3px 6px #00000029;
+}
   
+.desktop-facebook {
+  margin-right: 2em;
+}
   
+.desktop-linkedin {
+  margin-right: 2em;
+}
   
-  .desktop-pb {
-    background-image: url(../Images/pb.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    height: 75px;
-    width: 75px;
-    border-radius: 480px;
-    box-shadow: 5px 3px 6px #00000029;
-    left: 1em;
-    top: 0.5em;
-  }
+.desktop-menu-icon {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  right: 1em;
+  top: 0.5em;
+}
   
-  
-  
-  
-  .desktop-icons {
-    position: absolute;
-    display: inline-flex;
-    top: 1em;
-    left: 5em;
-  }
-  
-  .desktop-icon {
-    height: 33px;
-    width: 33px;
-    box-shadow: 5px 3px 6px #00000029;
-  }
-  
-  .desktop-facebook {
-    margin-right: 2em;
-  }
-  
-  .desktop-linkedin {
-    margin-right: 2em;
-  }
-  
-  
-  
-  
-  .desktop-menu-icon {
-    position: absolute;
-    height: 75px;
-    width: 75px;
-    right: 1em;
-    top: 0.5em;
-  }
-  
+.mobile-nav {
+  display: none;
+}
 
+.show-dropdown {
+  display: inline-flex;
+}
 
- .mobile-nav {
-        display: none;
- }
+.hide-dropdown {
+  display: none;
+}   
+
+#drop-down {
+  font-weight: 700;
+  font-size: 0.8em;
+  text-align: left;
+  position: absolute;
+  top: 0.7em;
+  right: 4em;
+  padding: 1em 1em 1em 1em;
+  list-style-type: none;
+}
+
+#drop-down li {
+  margin-right: 0.5em;
+}
 
 /* ---------- @MEDIA ---------- */
 /* MOBILE */
-@media screen and (min-width: 320px) and (max-width: 750px) {
+@media screen and (max-width: 750px) {
     .mobile-nav ul {
         display: flex;
         align-items: center;
@@ -110,12 +122,6 @@
     .mobile-nav {
         display: flex;
     }
-    .show-dropdown {
-        display: block;
-    }
-    .hide-dropdown {
-        display: none;
-    }   
     .menu-icon {
         background-image: url(../Images/menu-50.png);
         height: 50px;

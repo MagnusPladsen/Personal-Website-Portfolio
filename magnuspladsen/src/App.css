@@ -4,11 +4,14 @@
 }
 
 
-.App-header h1 {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2.2em; 
-    margin-bottom: -10px;
+
+
+.App-header {
+    text-shadow: 5px 3px 6px #00000029;
+    font-size: 2em;
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
 }
   
 .App-header h2 {
@@ -20,18 +23,7 @@
 }
 
 
-.App-header {
-    text-shadow: 5px 3px 6px #00000029;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    position: absolute;
-    margin-top: 50px;
-    left: 50%;
-    transform: translate(-50%);
-}
-  
+
 
 .btn-explore {
     font-size: 0.7em;
@@ -41,64 +33,46 @@
     padding: 5px 120px;
     border: 0px;
     position: relative;
-    top: 0em;
+    top: 30em;
 }
 
 .btn-explore a {
     color: black;
 }
 
-
+.mobile-icons {
+    display: none;
+}
 
 
 
 /* ---------- @MEDIA ---------- */
 /* MOBILE */
-@media screen and (min-width: 320px) and (max-width: 640px) {
-    .App-header h1 {
-      position: absolute;
-      font-size: 2em;
-      right: 1em;
-      top: -1.5em;
-      display: none;
-    }
-    .App-header h2 {
-        position: absolute;
-        font-size: 1.3em;
-        right: 1em;
-        top: -1.5em;
-      /* display: none; */
-    }
-    .App-pb {
-      position: relative;
-      height: 150px;
-      width: 150px;
-      left: 5%;
-      top: -2em;
-      border-radius: 50%;
-    }
+@media screen and (max-width: 750px) {
     .App-header {
-        top: 70px;
+        position: absolute;
         width: 100%;
     }
-    .App-icons {
-        position: absolute;
-        display: inline-flex;
-        top: 8em;
-        right: 12em;
+    .App-header h2 {
+        position: relative;
+        font-size: 1.3em;
+        top: 1em;
     }
-    .App-facebook {
-        margin-right: 20px;
+    .mobile-facebook {
+        margin-right: 2em;
     }
-    .App-linkedin {
-        margin-right: 20px;
+    .mobile-linkedin {
+        margin-right: 2em;
     }
     .btn-explore {
         color: black;
-        margin-top: 9em;
+        font-size: 0.7em;
+        top: 16em;
     }
-    .App-icons .icon {
-        height: 40px;
-        width: 40px;
+    .mobile-icons {
+        position: relative;
+        display: inline-flex;
+        top: 2.5em;
+        margin-left: 0em;
     }
 }

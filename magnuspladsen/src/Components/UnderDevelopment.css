@@ -75,7 +75,7 @@
 
 /* ---------- @MEDIA ---------- */
 /* MOBILE */
-@media screen and (min-width: 320px) and (max-width: 640px) {
+@media screen and (max-width: 750px) {
     .UnderDev-header h1 {
         position: absolute;
         font-size: 2em;
