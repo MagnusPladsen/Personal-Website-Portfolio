@@ -145,10 +145,11 @@
         background-color: white;
         top: 4em;
         right: 2.5em;
-        padding: 0.5em 1em 0.5em 0em;
+        padding: 0.5em 2em 0.5em 0em;
         width: 30vw;
         box-shadow: 5px 3px 6px #00000029;
         border: 1px solid black;
+        font-size: 1em;
     }
     #drop-down li {
         margin-bottom: 0.5em;
