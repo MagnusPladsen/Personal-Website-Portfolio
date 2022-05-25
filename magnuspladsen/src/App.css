@@ -1,3 +1,9 @@
+.App {
+    text-align: center;
+    position: relative;
+}
+
+
 .App-header h1 {
     font-weight: 700;
     font-style: normal;
@@ -6,15 +12,14 @@
 }
   
 .App-header h2 {
+    position: relative;
     font-weight: 700;
     font-style: normal;
     font-size: 1.3em;
+    top: -1.5em;
 }
 
-.App {
-    text-align: center;
-}
-  
+
 .App-header {
     text-shadow: 5px 3px 6px #00000029;
     flex-direction: column;
@@ -27,49 +32,16 @@
     transform: translate(-50%);
 }
   
-.App-pb {
-    background-image: url(./Images/pb.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    height: 315px;
-    width: 315px;
-    border-radius: 50%;
-    box-shadow: 5px 3px 6px #00000029;
-    left: -60%;
-    top: 0.5em;
-}
-  
-.App-icons {
-    margin-top: 20px;
-    display: inline-flex;
-    left: 50%;
-    transform: translate(-50%);
-    position: absolute;
-    top: 16em;
-}
-
-.App-facebook {
-    margin-right: 60px;
-}
-  
-.App-linkedin {
-    margin-right: 60px;
-}
-
 
 .btn-explore {
-    font-size: 25px;
+    font-size: 0.7em;
     font-weight: 700;
     box-shadow: 5px 3px 6px #00000029;
     border-radius: 60px;
     padding: 5px 120px;
     border: 0px;
-    left: 50%;
-    transform: translate(-50%);
-    position: absolute;
-    top: 15em;
+    position: relative;
+    top: 0em;
 }
 
 .btn-explore a {

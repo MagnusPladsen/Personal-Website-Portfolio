@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import menuIcon from '../Images/menu-100.png';
 
 
 class Navbar extends React.Component {
@@ -21,14 +22,16 @@ class Navbar extends React.Component {
         return (
             <div>
                 <nav className="desktop-nav">
-                    <ul>
-                        <Link to="/"><li>Home</li></Link>
-                        <Link to="/explore"><li>Explore</li></Link>
-                        <Link to="/under_development"><li>Portfolio</li></Link>
-                        <Link to="/under_development"><li>About</li></Link>
-                        <Link to="/under_development"><li>Contact</li></Link>
-                        <a href="https://docs.google.com/document/d/e/2PACX-1vQQvFgKzQMedDSDs-wHq5pjqllThx08F00eMbHKJg41W-LCpIo6Fo3pq1LO753bn-2cK-neHgBDevAp/pub"><li>CV</li></a>
-                    </ul>
+                    <header className="desktop-header">
+                        <div className="desktop-pb" alt="Profile picture"></div>
+                        <h1>Magnus Pladsen</h1>
+                        <div className="desktop-icons">
+                            <a href="https://www.facebook.com/magnus.pladsen/" target="_blank"><div className="desktop-facebook icon facebook"></div></a>
+                            <a href="https://www.linkedin.com/in/magnus-pladsen-1a2738226" target="_blank"><div className="desktop-linkedin icon linkedin"></div></a>
+                            <a href="https://github.com/MagnusPladsen" target="_blank"><div className="desktop-github icon github"></div></a>
+                        </div>
+                        <img src={menuIcon} alt="Hamburger menu" className="desktop-menu-icon {dropDown}" />
+                    </header>
                 </nav>
                 <nav className="mobile-nav">
                     <ul>
@@ -37,7 +40,7 @@ class Navbar extends React.Component {
                         <a href="javascript:void(0);" className="menu-icon" onClick={this.toggleDropDown}></a>
                         <div className={dropDown} id="drop-down">
                             <Link to="/"><li>Home</li></Link>
-                            <Link to="/explore"><li>Explore</li></Link>
+                            <Link to="/explore"><li>desktop</li></Link>
                             <Link to="/under_development"><li>Portfolio</li></Link>
                             <Link to="/under_development"><li>About</li></Link>
                             <Link to="/under_development"><li>Contact</li></Link>

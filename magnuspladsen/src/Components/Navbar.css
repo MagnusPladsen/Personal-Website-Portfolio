@@ -1,32 +1,96 @@
-nav ul {
-    display: flex;
+.desktop-nav {
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  
+  
+  .desktop-header {
+    text-shadow: 5px 3px 6px #00000029;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    height: 4em;
+    font-size: calc(10px + 2vmin);
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  .desktop-header h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+    margin-top: 0em;
+  }
+  
+  
+  
+  
+  .desktop-pb {
+    background-image: url(../Images/pb.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    border-radius: 480px;
     box-shadow: 5px 3px 6px #00000029;
-    border: 1px solid black;
-}
+    left: 1em;
+    top: 0.5em;
+  }
+  
+  
+  
+  
+  .desktop-icons {
+    position: absolute;
+    display: inline-flex;
+    top: 1em;
+    left: 5em;
+  }
+  
+  .desktop-icon {
+    height: 33px;
+    width: 33px;
+    box-shadow: 5px 3px 6px #00000029;
+  }
+  
+  .desktop-facebook {
+    margin-right: 2em;
+  }
+  
+  .desktop-linkedin {
+    margin-right: 2em;
+  }
+  
+  
+  
+  
+  .desktop-menu-icon {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    right: 1em;
+    top: 0.5em;
+  }
+  
 
-li {
-    list-style-type: none;
-    margin-right: 4em;
-    font-size: 30px;
-}
 
-nav li:hover {
-    cursor: pointer;
-}
-
-.mobile-nav {
-    display: none;
-}
+ .mobile-nav {
+        display: none;
+ }
 
 /* ---------- @MEDIA ---------- */
 /* MOBILE */
-@media screen and (min-width: 320px) and (max-width: 640px) {
-    nav ul {
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    .mobile-nav ul {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
         position: fixed;
         width: 100%;
         z-index: 1;
@@ -34,9 +98,11 @@ nav li:hover {
         box-shadow: 5px 3px 6px #00000029;
         border: 1px solid black;
     }
-    nav li {
+    .mobile-nav li {
         font-size: 1.5em;
         font-weight: 600;
+        list-style-type: none;
+        margin-right: 4em;
     }
     .desktop-nav {
         display: none;
@@ -83,5 +149,8 @@ nav li:hover {
         margin-left: 1.5em;
         font-size: 1.25em;
         /* border-bottom: 1px solid black; */
+    }
+    nav li:hover {
+        cursor: pointer;
     }
 }

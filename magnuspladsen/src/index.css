@@ -1,17 +1,27 @@
 body, html {
     height: 100%;
+    width: 100%;
 }
-  
+
+
+html {
+    overflow-x: hidden;
+}
 * {
     font-family: sofia-pro, sans-serif;
     margin: 0;
 }
   
-body {
+#bg {
     background-image: url(./Images/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
+    /* position: absolute; */
+    width: 100vw;
+    height: 100vh;
+    
 }
 
 button:hover {

@@ -1,108 +1,36 @@
-.Explore-header h1 {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2em;
-  margin-bottom: 0;
-}
-
-.Explore {
+.explore {
   text-align: center;
+  position: relative;
 }
 
-.Explore-header {
-  text-shadow: 5px 3px 6px #00000029;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translate(-50%);
-  margin-top: 2em;
-}
-
-.Explore-pb {
-  background-image: url(../Images/pb.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100px;
-  width: 100px;
-  border-radius: 480px;
-  box-shadow: 5px 3px 6px #00000029;
-  position: absolute;
-  top: 0.5em;
-  left: -4em;
-}
-
-.Explore-icons {
-  position: absolute;
-  display: inline-flex;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.Explore-icon {
-  height: 33px;
-  width: 33px;
-  box-shadow: 5px 3px 6px #00000029;
-}
-
-.Explore-facebook {
-  margin-right: 6em;
-}
-
-.Explore-icons p {
-  margin-left: 1.5em;
-  font-size: 0.8em;
-}
-
-.Explore-linkedin {
-  margin-right: 6em;
-}
-
-
-.Explore-btns {
-  position: absolute;
-  display: inline-flex;
-  left: 50%;
-  transform: translate(-50%);
-  top: 13em;
-}
-
-.Explore-btn {
-  font-size: 25px;
-  font-weight: 700;
-  box-shadow: 5px 3px 6px #00000029;
+.Explore-skills {
+  position: relative;
+  background-color: white;
+  width: 50vw;
+  height: 400em;
   border-radius: 60px;
-  padding: 5px 120px;
-  border: 0px;
+  opacity: 0.8;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 10em;
 }
 
-.btn-skills {
-  margin-right: 1em;
+.Explore-skills h2{
+  font-weight: 600;
+  font-size: 1.8em;
 }
 
-.btn-interests {
-  margin-right: 0;
+.Explore-skills p {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-left: 6em;
 }
 
-.show-skills {
-  display: block;
+.skills-htmlcss {
+  margin-bottom: 2em;
 }
 
-.hide-skills {
-  display: none;
-}
 
-.show-interests {
-  display: block;
-}
-
-.hide-interests {
-  display: none;
-}
 
 
 /* ---------- @MEDIA ---------- */
