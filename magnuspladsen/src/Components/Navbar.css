@@ -159,4 +159,7 @@
     nav li:hover {
         cursor: pointer;
     }
+    .show-dropdown {
+      display: block;
+    }
 }
